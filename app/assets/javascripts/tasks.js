@@ -13,6 +13,7 @@
         checkedStatus +
         '><label>' +
          task.title +
+     //    '<button class="deletebutton" type="button">Delete</button>' +
          '</label></div></li>';
 
       return liElement;
@@ -70,6 +71,11 @@
         $('.toggle').click(toggleTask);
         $('.new-todo').val('');
       });
+    });
+    
+    
+    $("#deletebutton").on("click", function() {
+      $("liElement input:checked").remove();   // 
     });
     
   });

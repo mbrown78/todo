@@ -388,3 +388,13 @@ html .clear-completed:active {
 .author a {
   color:#b83f45;
 }
+
+.delete {
+    position: absolute;
+    right: 0;
+    background: url('../images/logoANDoptions.png') no-repeat -80px -20px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    cursor: pointer;
+}

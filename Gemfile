@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+#font awesome for icons
+gem 'font-awesome-sass', '~> 4.6.2'
 #rspec
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
