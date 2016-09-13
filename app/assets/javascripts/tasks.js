@@ -18,8 +18,6 @@
 
       return liElement;
     }
-
-
     // toggleTask takes in an HTML representation of the
     // an event that fires from an HTML representation of
     // the toggle checkbox and  performs an API request to toggle
@@ -64,6 +62,7 @@
           title: textbox.val()
         }
       };
+      
       $.post("/tasks", payload).success(function(data) {
         var htmlString = taskHtml(data);
         var ulTodos = $('.todo-list');
@@ -77,26 +76,6 @@
     $("#deletebutton").on("click", function() {
       $(".todo-list li.completed").remove()
     });
-    
-    // $("#deletebutton").click(function(){
-    //   alert("The button was clicked.");
-    // });
-    
-    // $("#deletebutton").click(function () {
-    //   if ($(e.target).is(':checked')) {
-    //       $(this).remove();
-    //         });
-    // });
-    
-   
-//   function handleCompleteClick() {
-//     var items = $("#shopping_list input:checked").parent();
-//         $(this).remove();
-        
-//     });
-// }
-   
-    
     
 });
   
