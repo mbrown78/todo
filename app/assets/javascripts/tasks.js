@@ -73,10 +73,30 @@
       });
     });
     
-    
+   
     $("#deletebutton").on("click", function() {
-      $("liElement input:checked").remove();   // 
+      $(".todo-list li.completed").remove()
     });
     
-  });
+    // $("#deletebutton").click(function(){
+    //   alert("The button was clicked.");
+    // });
+    
+    // $("#deletebutton").click(function () {
+    //   if ($(e.target).is(':checked')) {
+    //       $(this).remove();
+    //         });
+    // });
+    
+   
+//   function handleCompleteClick() {
+//     var items = $("#shopping_list input:checked").parent();
+//         $(this).remove();
+        
+//     });
+// }
+   
+    
+    
+});
   
