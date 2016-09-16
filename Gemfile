@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+
+#pry gem
+gem "pry-rails"
 #font awesome for icons
 gem 'font-awesome-sass', '~> 4.6.2'
 #rspec

@@ -1,4 +1,6 @@
 class TasksController < ApplicationController
+    
+    
     def index
         render json: Task.all.order(:id)                  
     end    
@@ -14,6 +16,13 @@ class TasksController < ApplicationController
         task = Task.create(task_params)
         render json: task
     end
+    
+    def delete
+        task = Task.find(params[:id])
+        task = Task.destroy
+        render json: task 
+        
+    end    
     
     private 
     
