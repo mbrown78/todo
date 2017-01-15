@@ -26,7 +26,7 @@
       var itemId = $(e.target).data("id");
 
       var doneValue = Boolean($(e.target).is(':checked'));
-// still dont understand this 
+
       $.post("/tasks/" + itemId, {
         _method: "PUT",
         task: {
@@ -72,34 +72,8 @@
       });
     });
     
-   //////this section works 
     $("#deletebutton").on("click", function(e) {
       $(".todo-list li.completed").remove()
-      
-     /// iterate over hit each 
-      // var li_to_delete = $('.todo-list li.completed');
-      
-      // var itemId = $(e.target).data("id");
-
-      // var doneValue = Boolean($(e.target).is(':checked'));
-      
-      // var payload = {
-      //   task: {
-      //     done: doneValue
-      //   }
-      // };
-      
-      // $.ajax({
-      // type: 'DELETE',
-      // data: 
-      // url: payload
-      // success: function(){
-      //   li_to_delete.remove();
-      // }
-      // });
     });
-       
-       
-       
 });
   
